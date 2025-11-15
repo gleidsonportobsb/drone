@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneTech - A Revolução dos Drones</title>
+    
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* Cinza claro */
+            color: #333; /* Preto suave */
+        }
+
+        /* Container Principal para centralizar o conteúdo */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: #ffffff; /* Branco */
+            color: #333;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 4px solid #007bff; /* Azul */
+        }
+
+        header img.logo {
+            width: 250px;
+            height: auto;
+        }
+
+        /* Navegação */
+        nav {
+            background: #343a40; /* Cinza escuro/Preto */
+            color: #fff;
+            padding: 0.75rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ffffff; /* Branco */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            color: #007bff; /* Azul */
+        }
+
+        /* Layout Flex para main e aside */
+        .main-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        main {
+            flex: 2; /* Ocupa 2/3 do espaço */
+            min-width: 300px;
+        }
+        
+        aside {
+            flex: 1; /* Ocupa 1/3 do espaço */
+            min-width: 300px;
+        }
+        
+        /* Seções e Artigos */
+        section, article, aside {
+            background: #ffffff; /* Branco */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #007bff; /* Azul */
+            border-bottom: 2px solid #f0f2f5; /* Cinza claro */
+            padding-bottom: 10px;
+        }
+
+        /* Tabela de Produtos */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #dee2e6; /* Cinza */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #343a40; /* Cinza escuro/Preto */
+            color: #ffffff; /* Branco */
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa; /* Cinza muito claro */
+        }
+
+        /* Formulário de Cadastro */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ced4da; /* Cinza */
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff; /* Azul */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3; /* Azul mais escuro */
+        }
+        
+        /* Mídia Incorporada (PDF e Vídeo) */
+        .media-container {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-container iframe,
+        .media-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .pdf-container {
+            width: 100%;
+            height: 600px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #343a40; /* Cinza escuro/Preto */
+            color: #ffffff; /* Branco */
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo_drone.png" alt="Logotipo da DroneTech" class="logo" >
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#produtos">Nossos Drones</a></li>
+                <li><a href="#lancamento">Lançamento</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container main-layout">
+        <main>
+            <section id="produtos">
+                <h2>Nossos Drones Mais Vendidos</h2>
+                <article>
+                    <h3>Compare os Modelos</h3>
+                    <p>Encontre o drone perfeito para sua necessidade, seja para hobby, fotografia aérea ou uso profissional.</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Principais Características</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AeroScout X1</td>
+                                <td>Câmera 4K, 30 min de voo, GPS integrado</td>
+                                <td>R$ 2.899,00</td>
+                            </tr>
+                            <tr>
+                                <td>Nimbus Pro</td>
+                                <td>Sensor de obstáculos 360°, 10km de alcance</td>
+                                <td>R$ 4.999,00</td>
+                            </tr>
+                            <tr>
+                                <td>Falcon 4K</td>
+                                <td>Compacto e dobrável, Follow-me inteligente</td>
+                                <td>R$ 1.999,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <section id="lancamento">
+                <h2>Vídeo de Lançamento: Nimbus Pro</h2>
+                <p>Veja em ação o poder e a estabilidade do nosso mais novo lançamento, o drone Nimbus Pro.</p>
+                
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/S4m848Lv2K0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            <section id="catalogo">
+                <h2>Catálogo Completo de Produtos</h2>
+                <p>Explore todas as especificações técnicas, acessórios e modelos disponíveis em nosso catálogo oficial.</p>
+                
+                <div class="pdf-container">
+                    <iframe src="catalogo_drone.pdf" width="600" height="600" title="Catálogo de Produtos DroneTech em PDF"></iframe>
+                </div>
+            </section>
+        </main>
+        
+        <aside id="cadastro">
+            <h2>Cadastre-se e Receba Ofertas</h2>
+            <p>Seja o primeiro a saber sobre lançamentos, promoções e descontos exclusivos!</p>
+            
+            <form action="#" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                
+                <label for="email">Seu melhor e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+                
+                <label for="interesse">Principal Interesse:</label>
+                <select id="interesse" name="interesse">
+                    <option value="hobby">Drones para Hobby</option>
+                    <option value="filmagem">Drones para Filmagem</option>
+                    <option value="profissional">Uso Profissional</option>
+                    <option value="pecas">Peças e Acessórios</option>
+                </select>
+                
+                <input type="submit" value="Quero Receber Novidades">
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>DroneTech Tecnologia Ltda. | CNPJ: 00.000.000/0001-00</p>
+            <p>&copy; 2025. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
